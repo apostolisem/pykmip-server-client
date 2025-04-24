@@ -21,13 +21,17 @@ This project demonstrates a simple KMIP server and client using the `pykmip` lib
 1.  **Configure the server:** Edit `server.conf` if needed. By default, it listens on `127.0.0.1:5696` and uses `server.crt` and `server.key`.
 2.  **Start the server:**
     ```bash
+    pykmip-server -f server.conf
+    ```
+    OR
+    ```bash
     python -m kmip.services.server --config server.conf
     ```
     The server will start and log output to the console. It will create a `pykmip.db` file to store key information.
 
 ## Running the Client
 
-Two example client scripts are provided:
+Three example client scripts are provided:
 
 *   `test_client.py`: Connects to the server and discovers supported KMIP versions.
 *   `key_retrieval.py`: Connects to the server, creates a new AES-256 symmetric key, and then retrieves it.
