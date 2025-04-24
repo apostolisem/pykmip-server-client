@@ -23,10 +23,6 @@ This project demonstrates a simple KMIP server and client using the `pykmip` lib
     ```bash
     pykmip-server -f server.conf
     ```
-    OR
-    ```bash
-    python -m kmip.services.server --config server.conf
-    ```
     The server will start and log output to the console. It will create a `pykmip.db` file to store key information.
 
 ## Running the Client
