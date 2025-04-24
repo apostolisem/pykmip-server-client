@@ -1,0 +1,12 @@
+# PyKMIP database file
+pykmip.db
+
+# Python virtual environment
+venv/
+__pycache__/
+*.pyc
+*.pyo
+
+# Certificate and Key files
+*.crt
+*.key
